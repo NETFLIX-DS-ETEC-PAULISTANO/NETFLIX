@@ -46,6 +46,19 @@ margin: 6px    0;
     font-size: 14px;
     margin-left: 10px;
 }  
+.nevegacao .navbar .collapse
+.navbar-nav .nav-item .dropdown-menu{
+    background: #0000;
+    border: solid 1px var(--font-color-navbar);
+    position: absolute;
+    left: -100px;
+    z-index: 2000;
+}
+.nevegacao .navbar .collapse
+.navbar-nav .nav-item .dropdown-menu .dropdown-item{
+    color: #fff;
+}
+
 /* ----------------------------------- FIM DO MENU DE NAVEGAÇÃO ---------------------------------------*/
 
 /* ---------------------------------- INÍCIO DA EDIÇÃO DO BANNER ---------------------------------------*/
@@ -130,6 +143,10 @@ margin: 6px    0;
     text-align:center;
 }
 /*-------------------------------------------------------- FIM DA EDIÇÃO DA PÁGINA BROESE ------------------------*/
+
+
+
+
 
 
 /* Rodapé edição */
