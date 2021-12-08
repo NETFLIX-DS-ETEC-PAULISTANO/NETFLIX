@@ -17,7 +17,7 @@
 body{
     background: var(--background-navbar);
 }
-/*--------------------------------- INÍCIO DA EDIÇÃO DO MENU --------------------------------*/
+/*--------------------------------- INÍCIO DA EDIÇÃO DO MENU -----aaaaa---------------------------*/
 .nevegacao{
     background-color: var(--background-navbar);
     margin: 0;
@@ -63,12 +63,21 @@ margin: 6px    0;
 
 /* ---------------------------------- INÍCIO DA EDIÇÃO DO BANNER ---------------------------------------*/
 .banner{
-    height: 70vh;
-    background-image: url('../img/esquadrao 6.jpg');
+   
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 70vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
-
+.banner-img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
 .banner .text-banner{
     width: 50%;
     height: 100%;
@@ -78,11 +87,14 @@ margin: 6px    0;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
+    z-index: 999;
+    margin-top: -90vh;
 }   
 .banner .button-banner{
     display: flex;
     align-items: flex-end;
     width: 100%;
+  
 }
 .banner .text-banner .banner-button {
     background-color: rgba(0,0,0,0.7);
@@ -94,6 +106,7 @@ margin: 6px    0;
     justify-content: center;
     margin: 10px;
     width: 180px;
+
 }
 
 .banner .text-banner .banner-button i{
@@ -142,6 +155,25 @@ margin: 6px    0;
     font-size: 20px;
     text-align:center;
 }
+.series{
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 60px;
+}
+.series .dropdown-menu{
+    z-index: 800;
+} 
+.series .title{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+
+
 /*-------------------------------------------------------- FIM DA EDIÇÃO DA PÁGINA BROESE ------------------------*/
 
 
@@ -177,6 +209,9 @@ footer div p{
 
 /* responsividade tamanho tablet */
 @media screen and (max-width: 600px){
+    .banner{
+        max-width: 100%;
+    }
     .banner .text-banner{
         width: 100%;
     }
@@ -190,5 +225,9 @@ footer div p{
    }
    .main h1{
        top: 0px;
+   }
+   .banner .text-banner{
+        position: relative;
+        top: 200px;
    }
 }

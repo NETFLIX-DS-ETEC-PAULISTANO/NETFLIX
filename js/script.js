@@ -16,3 +16,15 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+
+function DROPDWON(){
+    const DROWPDON = $('.dropdown-menu');
+    DROWPDON.style.cssText = `
+        max-height: 300px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    `
+}
