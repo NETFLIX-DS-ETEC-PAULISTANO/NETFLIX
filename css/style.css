@@ -64,20 +64,13 @@ margin: 6px    0;
 /* ---------------------------------- INÍCIO DA EDIÇÃO DO BANNER ---------------------------------------*/
 .banner{
    
+    height: 70vh;
+    background-image: url('../img/esquadrao 6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 70vh;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     
 }
-.banner-img{
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
+
 .banner .text-banner{
     width: 50%;
     height: 100%;
@@ -87,8 +80,7 @@ margin: 6px    0;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    z-index: 999;
-    margin-top: -90vh;
+ 
 }   
 .banner .button-banner{
     display: flex;
@@ -226,8 +218,5 @@ footer div p{
    .main h1{
        top: 0px;
    }
-   .banner .text-banner{
-        position: relative;
-        top: 200px;
-   }
+
 }
