@@ -12,6 +12,8 @@
     --background-navbar: #141414;
     --button-navbar-responsivo: #fff;
     --font-color-navbar: #fff;
+    --modal-banner:#181818;
+    --cor-fora-do-modal-banner: rgba(0,0,0,0.4);
 }
 
 body{
@@ -33,7 +35,7 @@ body{
 .nevegacao .navbar  {
     margin:0;
 }
-.nevegacao .navbar .navbar-toggler .button{
+.nevegacao .navbar .navbar-atoggler .button{
 width: 35px;
 height: 5px;
 background-color: var(--button-navbar-responsivo);
@@ -164,12 +166,32 @@ margin: 6px    0;
     margin-left: 10px;
 }
 
-
-
 /*-------------------------------------------------------- FIM DA EDIÇÃO DA PÁGINA BROESE ------------------------*/
 
 
+/*---------------------------------------------Edição do modal do banner -----------------------------------------*/
+/*.banner-modal-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    z-index: 1100;
+    position: fixed;
+    top: 0;
+    background-color: var(--cor-fora-do-modal-banner);
+}
+.banner-modal-container .banner-modal-flex-itens{
+    width: 800px;
+    min-height: 100vh;
 
+    background-color: var(--modal-banner
+    );
+    border-radius: 10px;
+    z-index: 1100;
+
+}*/
 
 
 
