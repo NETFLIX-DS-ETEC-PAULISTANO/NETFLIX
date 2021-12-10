@@ -121,7 +121,18 @@ margin: 6px    0;
     height:25px;
     margin: 15px;
 }
-
+.item{
+    position: relative;
+    z-index: 1;
+    max-width: none;
+}
+.item img:hover{
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    left: 20px;
+    z-index: 10
+}
 /* EDIÇÃO DA PÁGINA BROWSE.HTML */
 .main{
     height: 85vh;
