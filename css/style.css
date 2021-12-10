@@ -281,6 +281,9 @@ margin: 6px    0;
     margin: 30px;
     justify-content: center;
 }
+.card-img-top{
+    
+}
 footer{ 
     position: relative;
     bottom: -40px;
