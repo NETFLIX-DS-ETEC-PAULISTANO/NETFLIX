@@ -1,5 +1,6 @@
 const  BUTTON_ASSISTIR_DO_BANNER = document.getElementById('Assistir-banner');
 const  BUTTON_MAIS_INFORMAÇOES = document.getElementById('MaisInformacaos-banner');
+const ICON_DE_FECHAR_DO_MODAl_BANNER = document.getElementById('exit');
 
 BUTTON_MAIS_INFORMAÇOES.addEventListener( 'click', () => {
 
@@ -11,24 +12,29 @@ BUTTON_MAIS_INFORMAÇOES.addEventListener( 'click', () => {
         justify-content: center;
         align-items: center;
         width:100%;
-        height: 100%;
-        z-index: 1100;
-        position: fixed;
+        z-index: 2000;
+        position:absolute;
         top: 0;
         background-color: var(--cor-fora-do-modal-banner);
+        min-height: 100%;
         boder-radius: 40px;
 
      
         `;
     MODAL.style.cssText = `
         width: 800px;
-        min-height: 100vh;
         height: 100%;
         background-color: var(--modal-banner
         );
         border-radius: 10px;
         z-index: 1100;
-        overflow-y: scroll;
+     
         `;
 
 })
+ICON_DE_FECHAR_DO_MODAl_BANNER.addEventListener('click', () =>{
+    const BACKGROUND_MODAL = document.getElementsByClassName('banner-modal-container')[0];
+    BACKGROUND_MODAL.style.cssText = `
+        display: none;
+    `
+} )

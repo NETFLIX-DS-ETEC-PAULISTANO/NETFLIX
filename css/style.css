@@ -210,7 +210,7 @@ margin: 6px    0;
 
 }
        
-.banner-modal-container .banner-modal-flex-itens header .icon-footer .radius-icon{
+.radius-icon{
     border-radius: 50%;
     border: solid 1px rgb(209, 208, 208); 
     display: flex;
@@ -222,7 +222,7 @@ margin: 6px    0;
     margin: 10px;
 
 }
-.banner-modal-container .banner-modal-flex-itens header .icon-footer .radius-icon:hover{
+.radius-icon:hover{
     border-color: #fff;     
     color: #000;
 }
@@ -245,11 +245,11 @@ margin: 6px    0;
 .banner-modal-container .banner-modal-flex-itens main .header .relevante-banner p{
     padding: 10px;
 }
-.banner-modal-container .banner-modal-flex-itens main .header .relevante-banner .relevante{
+.relevante{
     color: rgb(0, 255, 0);
 }
 
-.banner-modal-container .banner-modal-flex-itens main .header .relevante-banner .idade-recomentada{
+.idade-recomentada{
     height: 40px;
     width: 40px;
     background: red;
@@ -280,6 +280,21 @@ margin: 6px    0;
     flex-wrap: wrap;
     margin: 30px;
     justify-content: center;
+}
+
+.banner-modal-container .banner-modal-flex-itens .footer .col-sm-4 .card{
+    background-color: #2F2F2F;
+}
+.banner-modal-container .banner-modal-flex-itens .footer .col-sm-4 .card .card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-modal-container .banner-modal-flex-itens .footer .col-sm-4 .card .card-title .radius-icon{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -10px;
 }
 .descricao-banner{
     padding: 5px;
