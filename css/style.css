@@ -192,7 +192,9 @@ margin: 6px    0;
     z-index: 1100;
 
 }*/
-
+.banner-modal-container{
+    display: none;
+}
 
 
 /* Rodapé edição */
