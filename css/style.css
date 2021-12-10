@@ -13,7 +13,7 @@
     --button-navbar-responsivo: #fff;
     --font-color-navbar: #fff;
     --modal-banner:#181818;
-    --cor-fora-do-modal-banner: rgba(0,0,0,0.4);
+    --cor-fora-do-modal-banner: rgba(0,0,0,0.8);
 }
 
 body{
@@ -138,6 +138,7 @@ margin: 6px    0;
     display: flex;
     justify-content:center;
     align-items: center;
+  
 }
 .main .usuarios .perfil{
     margin: 15px;
@@ -170,35 +171,116 @@ margin: 6px    0;
 
 
 /*---------------------------------------------Edição do modal do banner -----------------------------------------*/
-/*.banner-modal-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height: 100%;
-    z-index: 1100;
-    position: fixed;
-    top: 0;
-    background-color: var(--cor-fora-do-modal-banner);
-}
-.banner-modal-container .banner-modal-flex-itens{
-    width: 800px;
-    min-height: 100vh;
 
-    background-color: var(--modal-banner
-    );
-    border-radius: 10px;
-    z-index: 1100;
-
-}*/
 .banner-modal-container{
     display: none;
+
+}
+.banner-modal-container .banner-modal-flex-itens header{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-between;
+    background-image: url('../img/esquadrao 6.jpg');
+    background-repeat:no-repeat;
+    background-size: cover; 
+}
+.banner-modal-container .banner-modal-flex-itens header i{ 
+/* Rodapé edição */
+    align-self: flex-end;
+    font-size: 35px;
+    margin: 10px;
+}
+.banner-modal-container .banner-modal-flex-itens header .icon-footer{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+
+}
+.banner-modal-container .banner-modal-flex-itens header .icon-footer button{
+    border: none;
+    background-color: #fff;
+    color: #0000;
+    border-radius: 10px;
+    width: 180px;
+ 
+    margin: 10px;
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;   
+
+}
+       
+.banner-modal-container .banner-modal-flex-itens header .icon-footer .radius-icon{
+    border-radius: 50%;
+    border: solid 1px rgb(209, 208, 208); 
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px;
+
+}
+.banner-modal-container .banner-modal-flex-itens header .icon-footer .radius-icon:hover{
+    border-color: #fff;     
+    color: #000;
+}
+.banner-modal-container .banner-modal-flex-itens header .icon-footer .radius-icon i{
+    font-size: 25px;     
+}
+.banner-modal-container .banner-modal-flex-itens main{
+    margin: 30px;
+    display: flex;
+}   
+.banner-modal-container .banner-modal-flex-itens main .header{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+.banner-modal-container .banner-modal-flex-itens main .header .relevante-banner{
+    display: flex;
+    flex-direction: row;
+}
+.banner-modal-container .banner-modal-flex-itens main .header .relevante-banner p{
+    padding: 10px;
+}
+.banner-modal-container .banner-modal-flex-itens main .header .relevante-banner .relevante{
+    color: rgb(0, 255, 0);
 }
 
+.banner-modal-container .banner-modal-flex-itens main .header .relevante-banner .idade-recomentada{
+    height: 40px;
+    width: 40px;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    display:flex;
+    justify-content: center;
+    align-items:center; 
+    border-radius: 10px;
+}
+.banner-modal-container .banner-modal-flex-itens main .footer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 
-/* Rodapé edição */
-
+.banner-modal-container .banner-modal-flex-itens main .footer .informacao strong{
+    color: rgb(102, 102, 102)   ;
+}
+.banner-modal-container .banner-modal-flex-itens .footer .titles-quantidade h1{
+    font-size: 25px;
+    margin: 30px;
+}
+.banner-modal-container .banner-modal-flex-itens .footer .episodios-temporadas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+}
 footer{ 
     position: relative;
     bottom: -40px;
@@ -242,5 +324,4 @@ footer div p{
    .main h1{
        top: 0px;
    }
-
 }

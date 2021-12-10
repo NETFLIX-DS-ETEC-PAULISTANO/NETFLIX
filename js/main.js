@@ -15,14 +15,20 @@ BUTTON_MAIS_INFORMAÇOES.addEventListener( 'click', () => {
         z-index: 1100;
         position: fixed;
         top: 0;
-        background-color: var(--cor-fora-do-modal-banner);`;
+        background-color: var(--cor-fora-do-modal-banner);
+        boder-radius: 40px;
+
+     
+        `;
     MODAL.style.cssText = `
         width: 800px;
         min-height: 100vh;
-
+        height: 100%;
         background-color: var(--modal-banner
         );
         border-radius: 10px;
-        z-index: 1100;`;
+        z-index: 1100;
+        overflow-y: scroll;
+        `;
 
 })
