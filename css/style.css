@@ -281,8 +281,8 @@ margin: 6px    0;
     margin: 30px;
     justify-content: center;
 }
-.card-img-top{
-    
+.descricao-banner{
+    padding: 5px;
 }
 footer{ 
     position: relative;
