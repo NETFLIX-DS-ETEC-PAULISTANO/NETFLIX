@@ -5,6 +5,7 @@
     margin: 0;  
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    overflow-y: initial;
 }
 
 /* VARIÁVEIS DE CONTROLE DE COR */
@@ -114,6 +115,16 @@ margin: 6px    0;
     font-size: 25px;
     padding: 15px;
 }
+.item{
+    z-index: 0 !important;
+}
+
+.item img{
+    position: none;
+    z-index: 0;
+    z-index: 0 !important;
+}
+
 /* ---------------------------------- FIM DA EDIÇÃO DO CARROSSEL ------------------------------------------------------*/
 
 /* LOGOTIPO, PADRONIZANDO O TAMANHO DOS LOGOTIPOS*/
@@ -121,10 +132,7 @@ margin: 6px    0;
     height:25px;
     margin: 15px;
 }
-.item:hover{
-    width: 600px;
-    height: 00px;
-}
+
 /* EDIÇÃO DA PÁGINA BROWSE.HTML */
 .main{
     height: 85vh;
@@ -270,14 +278,14 @@ margin: 6px    0;
     width: 50%;
 }
 
-.banner-modal-container .banner-modal-flex-itens main .footer .informacao strong{
+.informacao strong{
     color: rgb(102, 102, 102)   ;
 }
-.banner-modal-container .banner-modal-flex-itens .footer .titles-quantidade h1{
+.titles-quantidade h1{
     font-size: 25px;
     margin: 30px;
 }
-.banner-modal-container .banner-modal-flex-itens .footer .episodios-temporadas{
+.episodios-temporadas{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -285,15 +293,15 @@ margin: 6px    0;
     justify-content: center;
 }
 
-.banner-modal-container .banner-modal-flex-itens .footer .col-sm-4 .card{
+.col-sm-4 .card{
     background-color: #2F2F2F;
 }
-.banner-modal-container .banner-modal-flex-itens .footer .col-sm-4 .card .card-title{
+.col-sm-4 .card .card-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.banner-modal-container .banner-modal-flex-itens .footer .col-sm-4 .card .card-title .radius-icon{
+.col-sm-4 .card .card-title .radius-icon{
     height: 30px;
     width: 30px;
     position: relative;
@@ -301,6 +309,59 @@ margin: 6px    0;
 }
 .descricao-banner{
     padding: 5px;
+}
+
+
+/* --------------------------------------------------------------EDIÇÃO DA PÁGINA EXIBIR--------------------------------*/
+.container-banner-exibir{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.header-main-filmes{
+    width: 65%;
+}
+.banner-filme-serie img{
+    width: 100%;
+}
+.footer-filmes-main{
+    width: 35%;
+}
+.informacao-adicionar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.informacao-adicionar p{
+    padding: 10px;
+}
+.informacao-adicionar .radius-icon{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -10px;
+}
+.footer-exibir{
+    width: 65%;
+}
+.footer-filmes-main .episodios-temporadas{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+.footer-filmes-main .episodios-temporadas .col-sm-4 .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+}
+.footer-filmes-main .episodios-temporadas .col-sm-4 .card .card-img-top{
+    max-width: 50%;
+    width: 100%;
+    height: 100%;
 }
 footer{ 
     position: relative;
@@ -313,6 +374,7 @@ footer div ul{
     max-height: 20vh;
     list-style: none;
     height: 100%;
+    width: 100%;
 }
 footer div ul li{
     padding: 10px;
@@ -325,6 +387,24 @@ footer div p{
 }
 
 /* Fim da edição do rodapé  */
+@media screen and (max-width: 1000px){
+    /* EDIÇÃO DA PÁGINA EXIBIR */
+    .container-banner-exibir{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .header-main-filmes{
+        width: 100%;
+    }
+    .footer-filmes-main{
+        width: 100%;
+    
+    }
+  
+    
+}
+
+
 
 /* responsividade tamanho tablet */
 @media screen and (max-width: 600px){
@@ -345,4 +425,6 @@ footer div p{
    .main h1{
        top: 0px;
    }
+   /*EDIÇÃO DO EXIBIR*/
+
 }

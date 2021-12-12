@@ -1,6 +1,7 @@
 const  BUTTON_ASSISTIR_DO_BANNER = document.getElementById('Assistir-banner');
 const  BUTTON_MAIS_INFORMAÇOES = document.getElementById('MaisInformacaos-banner');
 const ICON_DE_FECHAR_DO_MODAl_BANNER = document.getElementById('exit');
+const ITENS_DO_CARROSSEL = document.getElementsByClassName('item');
 
 BUTTON_MAIS_INFORMAÇOES.addEventListener( 'click', () => {
 
@@ -28,6 +29,7 @@ BUTTON_MAIS_INFORMAÇOES.addEventListener( 'click', () => {
         );
         border-radius: 10px;
         z-index: 1100;
+        overflow-y: auto;
      
         `;
 
@@ -38,3 +40,7 @@ ICON_DE_FECHAR_DO_MODAl_BANNER.addEventListener('click', () =>{
         display: none;
     `
 } )
+
+ITENS_DO_CARROSSEL.addEventListener('mouseenter', () =>{
+    alert('aaaaaaaaaaaaaa');
+})

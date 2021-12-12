@@ -12,7 +12,7 @@
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
-  z-index: 1; }
+  z-index: 0 !important ; }
   .owl-carousel .owl-stage {
     position: relative;
     -ms-touch-action: pan-Y;
@@ -105,10 +105,12 @@
   animation-fill-mode: both; }
 
 .owl-carousel .owl-animated-in {
-  z-index: 0; }
+  z-index: 0 !important; 
+}
 
 .owl-carousel .owl-animated-out {
-  z-index: 1; }
+  z-index: 0 !important; 
+}
 
 .owl-carousel .fadeOut {
   animation-name: fadeOut; }
