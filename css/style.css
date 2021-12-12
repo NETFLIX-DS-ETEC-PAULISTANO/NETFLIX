@@ -321,6 +321,10 @@ margin: 6px    0;
 .header-main-filmes{
     width: 65%;
 }
+.top-px{
+    position: relative;
+    top: 100px;
+}
 .banner-filme-serie img{
     width: 100%;
 }
@@ -363,29 +367,66 @@ margin: 6px    0;
     width: 100%;
     height: 100%;
 }
+
+/* FIM DA EDIÇÃO EXIBIR*/
+
+/* ------------------------------------- INÍCIO DA EDIÇÃO DO RODAPÉ --------------------------------------*/
+
+.infromacao-rodape{
+ color: rgb(102, 102, 102)   ;
+}
+
+
 footer{ 
     position: relative;
     bottom: -40px;
-    background: rgba(0,0,0,0.4);
-}
-footer div ul{
     display: flex;
-    flex-flow: column wrap;
-    max-height: 20vh;
-    list-style: none;
-    height: 100%;
-    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-footer div ul li{
+.header-rodape{
+    display: flex;
+    flex-direction:column;
     padding: 10px;
-    font-weight: 200;
-    color: #fff;
-    font-size: 14px;
+    justify-content: center;
+    align-items: center;
 }
-footer div p{
-    text-align: center;
-}
+footer .main-rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.coluna{
+    list-style: none;
+    margin: 20px;
+   
+}
+.coluna li{
+    margin: 5px;
+}
+.coluna li a{
+    text-decoration: none;
+    margin: 10px;
+}
+.redes-sociais {
+    display: flex;
+}
+.redes-sociais i{
+    padding: 15px;
+    font-size: 35px;
+}
+.codigo-de-servico{
+    width: 150px;
+    color: rgb(102, 102, 102);
+    background-color: rgba(0,0,0,0.7);
+    border: solid 1px rgb(102, 102, 102);
+}
+.colunas-alinhamentos{
+    display: flex;
+    flex-direction: row;
+}
 /* Fim da edição do rodapé  */
 @media screen and (max-width: 1000px){
     /* EDIÇÃO DA PÁGINA EXIBIR */
@@ -400,10 +441,29 @@ footer div p{
         width: 100%;
     
     }
-  
+    /* FIM EDIÇÃO EXIBIR */
+    .coluna{
+        margin: 15px;
+    }
+    .coluna li{
+        margin: 5px;
+    }
+    .header-rodape{
+        padding: 5px;
+    }
+    .main-rodape{
+        flex-direction: column;
+        justify-content: center;
+        align-items: x;
+    }
     
 }
+@media screen and (max-width: 978px){
+    .colunas-alinhamentos{
+        flex-direction: column;
+    }
 
+}
 
 
 /* responsividade tamanho tablet */
@@ -427,4 +487,12 @@ footer div p{
    }
    /*EDIÇÃO DO EXIBIR*/
 
+}
+@media screen and (max-width: 529px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

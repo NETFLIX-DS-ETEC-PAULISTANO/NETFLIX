@@ -21,152 +21,265 @@
 </head>
 <body>
     <!-- NAVBAR-->
-    <sectiom class="navbar">
-        <nav>
-            <a href="index.html" class="nav-brand"><img src="img/netflix.png" height="30px" alt="logotipo" class="logotipo"></a>
-        </nav>
-    </sectiom>
-    <!-- MOSTANDO A IMAGEM DO FILME E SUAS DESCRIÇÃO-->
-    <main class="main-filmes">
-        <div class="container">
-            <div class="container-banner-exibir">
+  <!-- INICIANDO MENU DE NAVEGAÇÃO -->
+  <section class="nevegacao">
+    <nav class="navbar navbar-expand-lg " style="margin-left: 40px; margin-right: 40px;">
+        <!-- logotipo -->
+        <a class="navbar-brand" href="index.html"><img src="img/netflix.png" class="logotipo" alt="Logo netflix"
+                height="25px"></a>
+        <!-- BUTTON DE RESPOSIVIDADE-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+        </button>
+        <!-- links do menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="series.html">Séries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Filmes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Bombando</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Minha lista</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Assista de novo</a>
+                </li>
+            </ul>
 
-                <div class="header-main-filmes">
-                    <div class="title-filme-banner">
-                        <h1> RIVERDALE</h1>
+            <ul class="navbar-nav">
+                <!-- ICONE DE BUSCA DA NETFLIX  -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="30"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </a>
+                </li>
+                <!--<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>-->
+                <!-- LINK INFANTIU -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link"> Infantil</a>
+                </li>
+                <!-- ICONE DE NOTIFICAÇÕES  -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="34"
+                            fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                        </svg>
+                    </a>
+                </li>
+                <!-- DROPDWON DE USUÁRIOS-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/perfil-netflix (1) (1).png" alt="perfil" height="35">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #0000;">
+                        <a class="dropdown-item" href="#"><img src="img/perfil-netflix (2).png" alt="Perfil-rafael"
+                                height="30"> RAFAEL</a>
+                        <a class="dropdown-item" href="#"><img src="img/perfil-netflix-(3).png" alt="Perfil-Nicole"
+                                height="30"> KIDS</a>
+                        <a class="dropdown-item" href="#"> Gerenciador de perfil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Conta</a>
+                        <a class="dropdown-item" href="#">Central de ajuda</a>
+                        <a class="dropdown-item" href="#">Sair da conta</a>
                     </div>
-                    <!-- IMAGEM DO FILME-->
-                    <div class="banner-filme-serie">
-                        <img src="img/Riverdale-elenco.webp" alt="Rivberdale">
-                    </div>
-                    <div class="descricao-banner">
-                        <!-- INFORMAÇÃO DO FILME -->
-                        <div class="informacao-adicionar">
-                            <p class="idade-recomentada">16</p>
-                            <p class="ano">2020</p>
-                            <div class="radius-icon">
-                                <!-- ICON DE ADICIONAR-->
-                                <i class="fa fa-plus" aria-hidden="true"></i>
+                </li>
+                </li>
+        </div>
+    </nav>
+</section>
+<!-- FIM DO MENU DE NAVEGAÇÃO -->
+    <!-- MOSTANDO A IMAGEM DO FILME E SUAS DESCRIÇÃO-->
+    <div class="top-px"> 
+
+        <main class="main-filmes">
+            <div class="container">
+                <div class="container-banner-exibir">
+    
+                    <div class="header-main-filmes">
+                        <div class="title-filme-banner">
+                            <h1> RIVERDALE</h1>
+                        </div>
+                        <!-- IMAGEM DO FILME-->
+                        <div class="banner-filme-serie">
+                            <img src="img/Riverdale-elenco.webp" alt="Rivberdale">
+                        </div>
+                        <div class="descricao-banner">
+                            <!-- INFORMAÇÃO DO FILME -->
+                            <div class="informacao-adicionar">
+                                <p class="idade-recomentada">16</p>
+                                <p class="ano">2020</p>
+                                <div class="radius-icon">
+                                    <!-- ICON DE ADICIONAR-->
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </div>
                             </div>
+                            <p class="descricao-texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur modi maiores, delectus perferendis in qui exercitationem tenetur recusandae assumenda aliquam, architecto eius necessitatibus ullam. Libero recusandae aperiam atque architecto tenetur?</p>
                         </div>
-                        <p class="descricao-texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur modi maiores, delectus perferendis in qui exercitationem tenetur recusandae assumenda aliquam, architecto eius necessitatibus ullam. Libero recusandae aperiam atque architecto tenetur?</p>
+                             <footer style="background: none;" class="footer-exibir">
+                    <h3>Sobre <strong>RIVERDALE</strong></h3>
+                    <br>
+                    <p class="informacao"><strong>Criação:</strong> GABRIEL CARLOS CAVALCANTE</p>
+                    <p class="informacao"><strong>Elenco: </strong> ROB BATIMAN SUPER-MEM</p>
+                    <p class="informacao"><strong>Gêneros: </strong> Mistério, PoLÍCIAS</p>
+                    <p class="informacao"><strong>Cenas e momentos: </strong> lasdbasdkjhagshkasjhdgashjkd gasjgkdjahskgdhjkas<</p>
+                    <p class="informacao"><strong>Classificação etária:</strong>  16 anos</p>
+                </footer>
                     </div>
-                         <footer style="background: none;" class="footer-exibir">
-                <h3>Sobre <strong>RIVERDALE</strong></h3>
-                <br>
-                <p class="informacao"><strong>Criação:</strong> GABRIEL CARLOS CAVALCANTE</p>
-                <p class="informacao"><strong>Elenco: </strong> ROB BATIMAN SUPER-MEM</p>
-                <p class="informacao"><strong>Gêneros: </strong> Mistério, PoLÍCIAS</p>
-                <p class="informacao"><strong>Cenas e momentos: </strong> lasdbasdkjhagshkasjhdgashjkd gasjgkdjahskgdhjkas<</p>
-                <p class="informacao"><strong>Classificação etária:</strong>  16 anos</p>
-            </footer>
-                </div>
-                <div class="footer-filmes-main">
-                    <div class="episodios-temporadas">
-                        <div class="titles-quantidade">
-                            <h1> tipos semelhantes </h1>
-                        </div>
-                        <!-- card 1 -->
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <img class="card-img-top" src="img/elite (1).jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                      
+                    <div class="footer-filmes-main">
+                        <div class="episodios-temporadas">
+                            <div class="titles-quantidade">
+                                <h1> tipos semelhantes </h1>
+                            </div>
+                            <!-- card 1 -->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/elite (1).jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                          
+                                                <p class="idade-recomentada">16</p>
+                                                <p class="ano">2020</p>
+                                         
+                                            <div class="radius-icon">
+                                                <!-- ICON DE ADICIONAR-->
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </div>
+                                        </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.</p>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CARD 2-->
+                            <div class="col-sm-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="img/elite (1).jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
                                             <p class="idade-recomentada">16</p>
                                             <p class="ano">2020</p>
-                                     
-                                        <div class="radius-icon">
-                                            <!-- ICON DE ADICIONAR-->
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
-                                        </div>
-                                    </h5>
-                                    <p class="card-text">Some quick example text to build on the card title and
-                                        make up the bulk of the card's content.</p>
-    
+                                            <div class="radius-icon">
+                                                <!-- ICON DE ADICIONAR-->
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </div>
+                                        </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.</p>
+        
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- CARD 2-->
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <img class="card-img-top" src="img/elite (1).jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <p class="idade-recomentada">16</p>
-                                        <p class="ano">2020</p>
-                                        <div class="radius-icon">
-                                            <!-- ICON DE ADICIONAR-->
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
-                                        </div>
-                                    </h5>
-                                    <p class="card-text">Some quick example text to build on the card title and
-                                        make up the bulk of the card's content.</p>
-    
+                            <!-- CARD 3 -->
+                            <div class="col-sm-4">
+                                <div class="card" >
+                                    <img class="card-img-top" src="img/elite (1).jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <p class="idade-recomentada">16</p>
+                                            <p class="ano">2020</p>
+                                            <div class="radius-icon">
+                                                <!-- ICON DE ADICIONAR-->
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </div>
+                                        </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.</p>
+        
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- CARD 3 -->
-                        <div class="col-sm-4">
-                            <div class="card" >
-                                <img class="card-img-top" src="img/elite (1).jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <p class="idade-recomentada">16</p>
-                                        <p class="ano">2020</p>
-                                        <div class="radius-icon">
-                                            <!-- ICON DE ADICIONAR-->
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
-                                        </div>
-                                    </h5>
-                                    <p class="card-text">Some quick example text to build on the card title and
-                                        make up the bulk of the card's content.</p>
-    
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CARD 5-->
-                        <div class="col-sm-4">
-                            <div class="card" >
-                                <img class="card-img-top" src="img/elite (1).jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">
-                                        <p class="idade-recomentada">16</p>
-                                        <p class="ano">2020</p>
-                                        <div class="radius-icon">
-                                            <!-- ICON DE ADICIONAR-->
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
-                                        </div>
-                                    </h5>
-                                    <p class="card-text">Some quick example text to build on the card title and
-                                        make up the bulk of the card's content.</p>
-    
+                            <!-- CARD 5-->
+                            <div class="col-sm-4">
+                                <div class="card" >
+                                    <img class="card-img-top" src="img/elite (1).jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <p class="idade-recomentada">16</p>
+                                            <p class="ano">2020</p>
+                                            <div class="radius-icon">
+                                                <!-- ICON DE ADICIONAR-->
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </div>
+                                        </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of the card's content.</p>
+        
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+           
             </div>
-       
-        </div>
-    </main>
-    <footer class="rodape">
-        <div class="container">
-            <ul>
-                <li>Fale com nosco</li>
-                <li>Sobre</li>
-                <li>termos de privacidade</li>
-                <li>Entre em contato</li>
-                <li>Autodescricao</li>
-                <li>Relação com investidores</li>
-                <li>Avisos legais</li>
-                <li>Centro de ajuda</li>
-                <li>Termos de uso</li>
-                <li>Informações corporaticas</li>
-            </ul>
-            <p>@Gabriel Carlos Cavalcante 2021</p>
-        </div>
-    </footer>
+        </main>
+        <footer class="rodape">
+
+            <div class="header-rodape">
+                <!-- REDES SOCIAS -->
+                <div class="redes-sociais">
+                    <!-- INSTAGRAM -->
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <!-- FACEBOOK -->
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <!-- TWITER -->
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <!-- YOUTUBE -->
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </div>
+                <ul class="coluna">
+                    <li> <a href="#" class="infromacao-rodape"> IDIOMAS E LEGENDAS</a> </li>
+                    <li> <a href="#" class="infromacao-rodape"> IMPRENSA </a> </li>
+                    <li> <a href="#" class="infromacao-rodape"> PRIVACIDADE </a> </li>
+                    <li> <a href="#" class="infromacao-rodape"> ENTRE EM CONTANTO</a> </li>
+                </ul>
+                <button class="codigo-de-servico">
+                    Código de serviço
+                </button>
+            </div>
+            <div class="main-rodape">
+                <div class="colunas-alinhamentos">
+    
+                    <ul class="coluna">
+                        <li> <a href="#" class="infromacao-rodape">Audiodescriçãod</a> </li>
+                        <li> <a href="#" class="infromacao-rodape">Relações com investidores</a></li>
+                        <li> <a href="#" class="infromacao-rodape">Avisos legais</a></li>
+                    </ul>
+                    <ul class="coluna">
+                        <li> <a href="#" class="infromacao-rodape"> Centro de ajuda</a> </li>
+                        <li> <a href="#" class="infromacao-rodape"> Carreiras</a></li>
+                        <li> <a href="#" class="infromacao-rodape"> Preferência de cookies</a></li>
+        
+                    </ul>
+                    <ul class="coluna">
+                        <li> <a href="#" class="infromacao-rodape"> Cartão pré-pago</a></li>
+                        <li> <a href="#" class="infromacao-rodape"> Temos de uso</a></li>
+                        <li> <a href="#" class="infromacao-rodape"> Informações corporativas</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+        </footer>
+    </div>
      <!-- IMPORT script.js, jquery, pooper and bootstrap-->
      <script src="js/jquery-3.6.0.min.js"></script>
      <script src="js/popper.min.js"></script>
