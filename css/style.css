@@ -462,7 +462,15 @@ footer .main-rodape{
     .colunas-alinhamentos{
         flex-direction: column;
     }
-
+    .series{
+        position: relative;
+        top: 150px;
+    }
+}
+@media screen and (max-width: 768px){
+    .banner .text-banner{
+        width: 75%;
+    }
 }
 
 
@@ -489,10 +497,60 @@ footer .main-rodape{
 
 }
 @media screen and (max-width: 529px){
+    /* Edição do footer */ 
     footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    /*EDIÇÃO DO BANNER */
+    .banner{
+        position: relative;
+        top: 50px;
+    }
+   .banner .button-banner{
+       flex-direction: column;
+       align-items: center;
+   }  
+   .filmes{ 
+    position:relative;
+    top: 60px;
+}
+}
+@media screen and (max-width: 411px){
+    /*EDIÇÃO DOS TÍTULOS DO CARROSSEL */
+    .filmes .title-conteudo{
+        position:relative;
+        top: 20px;
+    }
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-brand img{
+        margin: 0;
+        padding: 0
+    }
+}
+@media screen and (max-width: 320px){
+    /*EDIÇÃO DO BANNER */
+    .banner{
+        position: relative;
+        top: 80px;
+    }
+       /*EDIÇÃO DOS TÍTULOS DO CARROSSEL */
+       .filmes{ 
+        position:relative;
+        top: 60px;
+    }
+}
+@media screen and (max-width: 319px){
+    .title-banner{
+        font-size: 30px;
+        text-align: center;
+    }
+    .filmes .title-conteudo{
+        font-size: 20px;
     }
 }
