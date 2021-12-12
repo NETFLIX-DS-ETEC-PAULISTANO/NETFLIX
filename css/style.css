@@ -458,6 +458,12 @@ footer .main-rodape{
     }
     
 }
+@media screen and (max-width: 991px){
+    .nevegacao .navbar .collapse .navbar-nav .nav-item .dropdown-menu{
+        left: 0px;
+        background: #000;
+    }
+}
 @media screen and (max-width: 978px){
     .colunas-alinhamentos{
         flex-direction: column;
@@ -467,6 +473,7 @@ footer .main-rodape{
         top: 150px;
     }
 }
+
 @media screen and (max-width: 768px){
     .banner .text-banner{
         width: 75%;
