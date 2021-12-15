@@ -346,7 +346,7 @@ margin: 6px    0;
     top: -10px;
 }
 .footer-exibir{
-    width: 65%;
+  display: block;
 }
 .footer-filmes-main .episodios-temporadas{
     display: flex;
