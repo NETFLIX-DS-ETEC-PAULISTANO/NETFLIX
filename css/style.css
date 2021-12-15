@@ -427,6 +427,15 @@ footer .main-rodape{
     display: flex;
     flex-direction: row;
 }
+.carrossel{
+    position: relative;
+    top: 100px;
+}
+
+/*EDIÇÃO DA PAGINA BOMBANDO*/
+.img-conteudo80{
+    width: 80%;
+}
 /* Fim da edição do rodapé  */
 @media screen and (max-width: 1000px){
     /* EDIÇÃO DA PÁGINA EXIBIR */
