@@ -7,6 +7,7 @@ BUTTON_MAIS_INFORMAÇOES.addEventListener( 'click', () => {
 
     const BACKGROUND_MODAL = document.getElementsByClassName('banner-modal-container')[0];
     const MODAL = document.getElementsByClassName('banner-modal-flex-itens')[0];
+    const BODY_SEGUNDARIA = document.getElementById('body-segundaria');
     BACKGROUND_MODAL.style.cssText = `
         display: flex;
         flex-direction: column;
@@ -17,8 +18,8 @@ BUTTON_MAIS_INFORMAÇOES.addEventListener( 'click', () => {
         position:absolute;
         top: 0;
         background-color: var(--cor-fora-do-modal-banner);
-        min-height: 100%;
         boder-radius: 40px;
+        heght: 1700px;
 
      
         `;
@@ -30,10 +31,12 @@ BUTTON_MAIS_INFORMAÇOES.addEventListener( 'click', () => {
         border-radius: 10px;
         z-index: 1100;
         overflow-y: auto;
-     
+            
         `;
 
+    
 })
+
 ICON_DE_FECHAR_DO_MODAl_BANNER.addEventListener('click', () =>{
     const BACKGROUND_MODAL = document.getElementsByClassName('banner-modal-container')[0];
     BACKGROUND_MODAL.style.cssText = `
@@ -41,6 +44,3 @@ ICON_DE_FECHAR_DO_MODAl_BANNER.addEventListener('click', () =>{
     `
 } )
 
-ITENS_DO_CARROSSEL.addEventListener('mouseenter', () =>{
-    alert('aaaaaaaaaaaaaa');
-})

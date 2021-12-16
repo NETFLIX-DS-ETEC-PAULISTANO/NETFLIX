@@ -19,6 +19,7 @@
 
 body{
     background: var(--background-navbar);
+    height: 100%;
 }
 /*--------------------------------- INÍCIO DA EDIÇÃO DO MENU -----aaaaa---------------------------*/
 .nevegacao{
@@ -467,6 +468,7 @@ footer .main-rodape{
     }
     
 }
+
 @media screen and (max-width: 991px){
     .nevegacao .navbar .collapse .navbar-nav .nav-item .dropdown-menu{
         left: 0px;

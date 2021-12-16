@@ -1,4 +1,5 @@
-const FLASH_FILME = document.getElementById('flash');
+
+/*const FLASH_FILME = document.getElementById('flash');
 
 FLASH_FILME.addEventListener("mouseenter", () => {
     FLASH_FILME.style.cssText = `
@@ -19,4 +20,4 @@ FLASH_FILME.addEventListener("mouseout", ()=>{
     `;
 })
 
-
+*/
