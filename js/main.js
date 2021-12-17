@@ -20,18 +20,20 @@ const ITENS_DO_CARROSSEL = document.getElementsByClassName('item');
         top: 0;
         background-color: var(--cor-fora-do-modal-banner);
         min-height: 100%;
-        boder-radius: 40px;
-
+        
+        
      
         `;
+
     MODAL.style.cssText = `
         width: 800px;
-        height: 100%;
-        background-color: var(--modal-banner
-        );
+        height: auto;
+        background-color: var(--modal-banner);
         border-radius: 10px;
         z-index: 1100;
         overflow-y: auto;
+        margin-bottom: 50%;
+        
      
         `;
 

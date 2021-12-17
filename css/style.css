@@ -14,7 +14,8 @@
     --button-navbar-responsivo: #fff;
     --font-color-navbar: #fff;
     --modal-banner:#181818;
-    --cor-fora-do-modal-banner: rgba(0,0,0,0.8);
+    /*--cor-fora-do-modal-banner: rgba(0,0,0,0.8);*/
+    --cor-fora-do-modal-banner: rgba(231, 25, 25, 0.183);
 }
 
 body{
