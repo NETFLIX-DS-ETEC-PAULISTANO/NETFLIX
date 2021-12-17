@@ -14,8 +14,8 @@
     --button-navbar-responsivo: #fff;
     --font-color-navbar: #fff;
     --modal-banner:#181818;
-    /*--cor-fora-do-modal-banner: rgba(0,0,0,0.8);*/
-    --cor-fora-do-modal-banner: rgba(231, 25, 25, 0.183);
+    --cor-fora-do-modal-banner: rgba(0,0,0,0.8);
+    
 }
 
 body{
@@ -571,3 +571,38 @@ footer .main-rodape{
         font-size: 20px;
     }
 }
+
+/*---------Responsividade Modal---------------*/
+
+@media screen and (max-width: 1000px) {
+    .banner-modal-flex-itens{
+        margin-bottom: 72% !important;
+    }
+    .banner-modal-container{
+        background-color: var(--cor-fora-do-modal-banner)!important;
+    }
+}
+@media screen and (max-width: 997px) {
+    .banner-modal-flex-itens{
+        margin-bottom: 80% !important;
+    }
+    .banner-modal-container{
+        background-color: var(--cor-fora-do-modal-banner)!important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .banner-modal-flex-itens{
+        margin-bottom: 80% !important;
+        margin-right: 100% !important;
+        margin-left: 100% !important;
+        width: 800px !important;
+    }
+    .banner-modal-container{
+        background-color: var(--cor-fora-do-modal-banner)!important;
+        
+    }
+}
+
+
+

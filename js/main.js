@@ -20,8 +20,6 @@ const ITENS_DO_CARROSSEL = document.getElementsByClassName('item');
         top: 0;
         background-color: var(--cor-fora-do-modal-banner);
         min-height: 100%;
-        
-        
      
         `;
 
@@ -33,7 +31,8 @@ const ITENS_DO_CARROSSEL = document.getElementsByClassName('item');
         z-index: 1100;
         overflow-y: auto;
         margin-bottom: 50%;
-        
+        margin-top:50px
+
      
         `;
 
