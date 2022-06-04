@@ -122,3 +122,21 @@ main > section > footer > p a:hover{
     margin-right: 60px;
     margin-bottom: 20px;
 }
+@media screen and (max-width: 500px) {
+    body{
+        background-image: none !important;
+        background-color: black;
+    }
+    main section{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        padding: 10px;
+    }
+    main > section > main > form > input{
+        width: 100%;
+    }
+    .buton-enviar{
+        width: 100%;
+    }
+}
